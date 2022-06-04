@@ -1,0 +1,417 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.sidebar{
+	 height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+ background-color: rgba(0,0,0, 0.9);
+ overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar-content{
+	position: relative;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.sidebar a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.sidebar a:hover, .sidebar a:focus {
+  color: #f1f1f1;
+}
+
+.logo img{
+	height: 150px;
+	width: 150px; 
+	border: 4px solid black;
+	border-radius: 100px;   
+	cursor: pointer; 
+	display: block;
+    margin: auto;
+}
+.sidebar nav{
+	padding: 10px;
+
+}
+.sidebar nav li{
+	list-style: none;
+	font-size: 14px;
+	/*font-style: bold; */
+	padding: 8px;
+	margin: 20px;
+	margin-right: 0px;
+	margin-left: 0px; 
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.sidebar nav li a{
+text-decoration: none; 
+color: black; 
+}
+.sidebar nav li a:hover{
+color: white; 
+text-decoration-line: underline; 
+}
+
+
+.outerBox{
+	width: 100vw ;
+	height: 81vh;
+	
+}
+.infoContainer{
+	/*background-color: yellow;*/
+	height: 66vh; 
+	margin-top: 5vh;
+	display: flex;
+	
+}
+.devPic img{
+	width: 22vw;
+	height: 70vh;
+	margin: 0 3vw;
+	margin-top: 2vh; 
+	margin-right: 2vw; 
+	background-color: red;  
+}
+.devInfo{
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	justify-content: center; 
+	color: blueviolet;
+	margin-right: 4vw;
+	margin-top: 5vh;  
+	font-weight: 600;
+	width: 70vw; 
+}
+
+.devInfo span{
+	color: darkred; 
+}
+.container{
+	display: flex;
+}
+.hello{
+	font-family: 'Pacifico', cursive;
+	font-size: 1.5rem;
+}
+.name{
+	font-family: 'Arvo', serif;
+	font-size: 1.2rem;
+}
+.about{
+
+}
+.moreAbout{
+	margin: 12px;
+	font-size: 12px;
+	text-align: center; 
+}
+.buttons button{
+	cursor: pointer; 
+border: 2px solid gray; 
+border-radius: 7px; 
+color: white; 
+background-color: grey; 
+}
+
+.buttons button:hover{
+size: 1.2rem;
+border: 2px solid gray; 
+border-radius: 7px; 
+color: black; 
+background-color: whitesmoke; 
+}
+footer{
+	width: 100vw;
+	height: 7.2vh ; 
+	background-color: black;
+	color: white; 
+	display: flex;
+	justify-content: center; 
+	top: 100vh; 
+}
+footer p{
+	padding-top: 2vh; 
+	
+}
+
+/* MEDIA QUERY 1 */
+
+/*
+@media (max-width: 936px) {
+
+}
+*/
+
+
+/* CONTACT CSS*/
+
+.main{
+	width: 800px;
+	height: 93vh;
+	flex-wrap: wrap-reverse; 
+}
+.heading h1{
+	text-align: center; 
+	padding-top: 1vh;
+	margin-bottom: 1vh; 
+}
+.contactInfo{
+	height: 77.8vh; 
+	display: flex; 
+	justify-content: space-around
+}
+.MyContact{
+	height: 70vh;
+	width: 36vw;
+	border: 2px solid skyblue;
+	border-radius: 50px;
+	margin: 4vw;
+	margin-top: 2vh; 
+	background-color: blueviolet;
+}
+.MyContact h3{
+	text-align: center; 
+	margin: 2vw 0;
+	font-size: 1.5em;
+	color: white;
+}
+.contContainer{
+	    display: flex;
+    height: 45vh;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-evenly;
+} 
+
+.phoneImg img {
+height: 4vh;
+width: 5vh;
+/*margin: 2vh 0;*/
+border: 2px solid white;
+border-radius: 2vh;
+}
+.phone{
+	display: flex;
+}
+.phoneNo{
+	margin: 5vh;
+	font-size: 1rem;
+	margin-left: 0;
+	color: white; 
+}
+
+.MyContact p{
+	text-align: center;
+	padding: 0 3vw ;
+	color: white;
+}
+.emailImg img {
+    height: 6vh;
+    width: 6vh;
+    margin: 0vh 2vh;
+    border-radius: 2vh;
+}
+.email{
+	display: flex;
+}
+.emailId{
+	margin: 1vh;
+	font-size: 0.9rem;
+	margin-left: 1vh;
+	color: white; 
+}
+.addressImg img {
+height: 5vh;
+width: 5vh;
+margin: 2vh;
+border: 2px solid white;
+border-radius: 2vh;
+}
+.address{
+	display: flex;
+}
+.addressName{
+	margin: 3vh;
+	font-size: 1rem;
+	margin-left: 0;
+	color: white; 
+}
+form{
+	width: 69vh; 
+}
+form div{
+	margin: 0.8vh;	
+	/*margin-right: 0;*/
+}
+form input{
+width: 27vw; 
+}
+
+#help{
+	font-size: 11px; 
+	color: red;
+}
+#gridCheck{
+	width: 10px;
+	height: 10px; 
+}
+.form-check-label{
+
+	font-size: 12px;
+	color: blue;  
+}
+.btn{
+display: block;
+margin: auto; 
+cursor: pointer;
+border: 2px solid darkgray; 
+border-radius: 6px;
+}
+.btn:hover{
+color: white;
+background-color: black; 
+}
+
+/* CSS FOR EDUCATION.HTML*/
+
+.EduContainer {
+    display: flex;
+    width: 90vw;
+    height: 77.8vh;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-content: stretch;
+    justify-content: space-between;
+    align-items: center;
+}
+.EduCont h1{
+	text-align: center; 
+	margin: 5vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh; 
+	margin-right: 10vw;  
+}
+.commonInfo{
+    width: 70vw;
+    border: 2px solid black;
+    margin: 10px;
+    margin-right: 50px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.commomInAll{
+	width: 38vw;
+	margin: 11px;
+}
+
+
+/* CSS FOR SKILL.HTML */
+
+.skillItemOneAtAtime{
+	margin: 2vh; 
+	align-items: center;
+}
+.SkillContainer{
+	margin: -1vh 4vw;
+    height: 77.4vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+}
+.SkillCont h1{
+text-align: center; 
+	margin: 1.5vh; 
+	margin-bottom: 3vh; 
+}
+.skillItem img{
+	width: 8vw; 
+	height: 9vh; 
+	margin: 0; 
+}
+
+.skill{
+	width: 30vw; 
+	height: 20px; 
+	border: 2px solid black; 
+	border-radius: 10px; 
+	margin: 4px; 
+}
+.skHtml{
+	width: 26vw; 
+	height: 20px;
+	border-radius: 8px; 
+	margin-left: -1px;
+	background-color: #ff2222; 
+}
+.skCss{
+	width: 24vw; 
+	height: 20px;
+	border-radius: 8px; 
+	margin-left: -1px;
+	background-color: #ff8900; 
+}
+.skJs{
+	width: 14vw; 
+	height: 20px;
+	border-radius: 8px; 
+	margin-left: -1px;
+	background-color: #3ed708;
+}
+.skCpp{
+	width: 24vw; 
+	height: 20px;
+	border-radius: 8px; 
+	margin-left: -1px;
+	background-color: #ff8900; 
+}
+.skDsa{
+	width: 18vw; 
+	height: 20px;
+	border-radius: 8px; 
+	margin-left: -1px;
+	background-color: #d8ec0e ; 
+}
+.skVe{
+	width: 17vw; 
+	height: 20px;
+	border-radius: 8px; 
+	margin-left: -1px;
+	background-color: #72ff00; 
+}
+.skCaed{
+	width: 26vw; 
+	height: 20px;
+	border-radius: 8px; 
+	margin-left: -1px;
+	background-color: #ff2b02; 
+}
